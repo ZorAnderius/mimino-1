@@ -1,0 +1,243 @@
+@font-face {
+  font-family: Geometria-400;
+  src: url(/fonts/Geometria.ttf);
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+a {
+  display: block;
+}
+img {
+  display: block;
+  /* max-width: 100%;
+  height: auto;
+  width: 100%; */
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ----HEADER------- */
+.header {
+  background-color: #121212;
+}
+.header-navigtion {
+}
+.navigation-list {
+}
+.navigation-item {
+}
+.navigation-link {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+.logo {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+
+.logo > span {
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #d8d7d7;
+}
+.header-soc {
+  color: yellow;
+}
+
+/* -----HERO------- */
+
+.main {
+}
+.hero {
+  background: #121212;
+}
+.hero-title {
+  font-weight: 400;
+  font-size: 180px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+.hero-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+.hero-italic {
+  font-style: italic;
+}
+.hero-img {
+}
+.hero-btn {
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+  background-color: #121212;
+  border-color: red;
+}
+
+/* ----ABOUT A COMPLEX------- */
+.about {
+}
+.about-title {
+}
+.about-img {
+}
+.critic-wrap {
+  background: #121212;
+  box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+.critic-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: #f7f7f7;
+}
+.critic-rating {
+  font-size: 12px;
+  line-height: 1.33;
+  color: #575757;
+}
+
+.critic-rating > span {
+  color: #f7f7f7;
+}
+.about-text-list {
+}
+
+.about-text-item {
+}
+
+.about-subtext {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #484848;
+}
+.about-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+/* ----RESTAURANT */
+
+.restaurant {
+}
+.restaurant-title {
+}
+.restaurant-text {
+}
+.restaurant-book-table-btn {
+}
+.restaurant-view-menu-btn {
+}
+.restaurant-list {
+}
+.restaurant-item {
+}
+.restaurant-img {
+}
+
+/* -----WELCOME------ */
+.welcom {
+}
+.welcome-title {
+}
+.welcome-list {
+}
+.welcome-item {
+}
+.welcome-text {
+}
+
+/* ----HOTEL--------- */
+.hotel {
+}
+.hotel-title {
+}
+.hotel-text {
+}
+.hotel-book-room-btn {
+}
+.hotel-view-room-btn {
+}
+.hotel-img {
+}
+
+/* -----LOCATION---- */
+.location {
+}
+.location-map {
+}
+.location-title {
+}
+.address {
+  display: block;
+  font-style: normal;
+}
+.address-list {
+}
+.address-item {
+}
+.address-link {
+}
+.address-text {
+}
+.address-phone {
+}
+
+/* -----FOOTER---- */
+.footer {
+}
+.footer-navigtion {
+}
+.footer-navigation-list {
+}
+.footer-navigation-item {
+}
+.footer-navigation-link {
+}
+.footer-logo {
+}
+.footer-soc {
+}
