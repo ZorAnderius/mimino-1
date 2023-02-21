@@ -55,21 +55,70 @@ p {
   line-height: 1.71;
   letter-spacing: inherit;
   text-transform: inherit;
-  width: 143px;
-  height: 40px;
+  min-width: 143px;
+  min-height: 40px;
   border: 0.8px solid #f7f7f7;
   border-radius: 32px;
 }
 
+.container {
+  width: 1440px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 1px solid red;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
 /* ----HEADER------- */
 .header {
-  background-color: #121212;
+}
+
+.header-container {
+  position: relative;
+  background-color: transparent;
+}
+
+.header-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
 }
 .header-navigtion {
 }
 .navigation-list {
+  margin: 0;
+  display: flex;
+  gap: 32px;
 }
+
 .navigation-item {
+  margin: 0;
+}
+.navigation-item > .current-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.navigation-item > .current-page::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #f7f7f7;
 }
 .navigation-link,
 .footer-navigation-link {
@@ -85,6 +134,10 @@ p {
   line-height: 1.2;
   letter-spacing: 0.18em;
   color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
 }
 
 .logo > span,
@@ -99,19 +152,60 @@ p {
   color: yellow;
 }
 
-/* -----HERO------- */
+.header-soc-list {
+  display: flex;
+  gap: 16px;
+}
+.header-soc-item {
+  color: #f6f6f6;
+}
+.header-soc-icon {
+  stroke: currentColor;
+  fill: transparent;
+}
 
+/* -----HERO------- */
 .main {
 }
 .hero {
-  background: #121212;
+  padding-top: 274px;
+  padding-bottom: 48px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #121212;
+  background-image: url(../images/hero/hero-desktop-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 176px) 100%;
 }
+
 .hero-title {
   font-weight: 400;
   font-size: 180px;
   color: #f7f7f7;
+  margin-bottom: 196px;
 }
+
+.hero-wrap {
+  display: flex;
+  gap: 275px;
+}
+
+.hero-text-wrap {
+  display: flex;
+  gap: 32px;
+}
+
+.hero-text.first {
+  max-width: 338px;
+}
+
+.hero-text.second {
+  max-width: 314px;
+}
+
 .hero-text {
+  display: block;
   font-weight: 400;
   letter-spacing: 0.05em;
   color: #f7f7f7;
@@ -119,11 +213,16 @@ p {
 .italic-txt {
   font-style: italic;
 }
-.hero-img {
+.hero-btn-list {
+  display: flex;
+  gap: 14px;
 }
 
+/* .hero-btn-item {
+} */
 .hero-book-room-btn,
 .hero-book-table-btn {
+  padding: 9px 24px;
   font-size: 18px;
   line-height: 1.33;
   background-color: #121212;
@@ -133,14 +232,56 @@ p {
 /* ----ABOUT A COMPLEX------- */
 .about {
 }
-.about-title {
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
-.about-img {
+
+.about-first-box {
+  display: flex;
+  gap: 107px;
 }
+
+.canvas-about-first {
+  min-width: 739px;
+  min-height: 636px;
+  background-image: url(../images/desktop/main/about-a-complex/img-2-1x.jpg),
+    url(../images/desktop/main/about-a-complex/img-1-1x.jpg);
+  background-size: 439px, 482px;
+  background-repeat: no-repeat;
+  background-position: top 209px left 300px, top 0 left 0;
+  padding-top: 176px;
+  padding-left: 370px;
+}
+
 .critic-wrap {
+  max-width: 214px;
+  max-height: 61px;
+  display: flex;
+  gap: 12px;
   background: #121212;
   box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
+  padding: 10px 14px;
+}
+
+.about-img-critic {
+  border-radius: 50%;
+}
+.critic-text-wrap {
+  padding: 2px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 .critic-name {
   font-size: 14px;
@@ -158,13 +299,13 @@ p {
 .critic-rating > span {
   color: #f7f7f7;
 }
-.about-text-list {
-}
-
-.about-text-item {
+.about-text-wrap {
+  max-width: 530px;
+  padding-top: 199px;
 }
 
 .about-subtext {
+  margin-bottom: 18px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.18em;
@@ -174,6 +315,15 @@ p {
   font-size: 18px;
   line-height: 1.33;
   color: #121212;
+}
+
+.about-text.first {
+  max-width: 473px;
+  margin-bottom: 14px;
+}
+
+.about-text.second {
+  max-width: 439px;
 }
 
 /* ----RESTAURANT */

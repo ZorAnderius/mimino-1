@@ -25,126 +25,149 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header-navigtion">
-        <ul class="navigation-list list">
-          <li class="navigation-item">
-            <a class="navigation-link link" href="./index.html">Home</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link link" href="./">Hotel</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link link" href="./">Restaurant</a>
-          </li>
-        </ul>
-        <a class="logo link" href="./index.html"
-          >Mimino <span>restaurant-hotel complex</span></a
-        >
-      </nav>
-      <div class="header-soc">Icons</div>
+      <div class="container header-container">
+        <div class="header-wrap">
+          <nav class="header-navigtion">
+            <ul class="navigation-list list">
+              <li class="navigation-item">
+                <a class="navigation-link link current-page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link link" href="./">Hotel</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link link" href="./">Restaurant</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="logo link" href="./index.html"
+            >Mimino <span>restaurant-hotel complex</span></a
+          >
+          <div class="header-soc">
+            <ul class="header-soc-list list">
+              <li class="header-soc-item">
+                <svg class="header-soc-icon" width="24" height="24">
+                  <use href="./images/icons/icons.svg#icon-instagram"></use>
+                </svg>
+              </li>
+              <li class="header-soc-item">
+                <svg class="header-soc-icon" width="24" height="24">
+                  <use href="./images/icons/icons.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li class="header-soc-item">
+                <svg class="header-soc-icon" width="24" height="24">
+                  <use href="./images/icons/icons.svg#icon-twitter"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main class="main">
-      <section class="hero">
-        <h1 class="hero-title title">Mimino</h1>
-        <p class="hero-text text">
-          Whether you're in the mood for a hearty breakfast, a light lunch, or
-          <span class="italic-txt">a romantic dinner</span>, our menu has
-          something for everyone.
-        </p>
-        <p class="hero-text text">
-          At Hotel Mimino, <span class="italic-txt">we believe</span> that great
-          food should be available to everyone, no matter the time of day.
-        </p>
-        <img
-          class="hero-img"
-          src="./images/hero/hero-desktop-1x.jpg"
-          alt="Our complex"
-          width="542"
-        />
-        <button class="hero-book-room-btn btn" type="button">
-          book a room
-        </button>
-        <button class="hero-book-table-btn btn" type="button">
-          book a table
-        </button>
-      </section>
+      <section class="section">
+        <div class="hero">
+          <div class="container">
+            <h1 class="hero-title title">Mimino</h1>
+            <div class="hero-wrap">
+              <div class="hero-text-wrap">
+                <p class="hero-text first text">
+                  Whether you're in the mood for a hearty breakfast, a light
+                  lunch, or
+                  <span class="italic-txt">a romantic dinner</span>, our menu
+                  has something for everyone.
+                </p>
+                <p class="hero-text second text">
+                  At Hotel Mimino,
+                  <span class="italic-txt">we believe</span> that great food
+                  should be available to everyone, no matter the time of day.
+                </p>
+              </div>
 
-      <section class="about">
-        <h2 class="about-title title">About a complex</h2>
-        <div class="about-first-box">
-          <img
-            class="about-img"
-            src="./images/desktop/main/about-a-complex/img-1-1x.jpg"
-            alt="interior"
-            width="482"
-          />
-          <img
-            class="about-img"
-            src="./images/desktop/main/about-a-complex/img-2-1x.jpg"
-            alt="bathtub"
-            width="439"
-          />
-          <div class="critic-wrap">
-            <img
-              class="about-img"
-              src="./images/critic's photos/critic-1-1x.jpg"
-              alt="Critic"
-              width="41"
-            />
-            <p class="critic-name title">Maria</p>
-            <p class="critic-rating text">give rating <span>4.5</span></p>
+              <ul class="hero-btn-list list">
+                <li class="hero-btn-item">
+                  <button class="hero-book-room-btn btn" type="button">
+                    book a room
+                  </button>
+                </li>
+                <li class="hero-btn-item">
+                  <button class="hero-book-table-btn btn" type="button">
+                    book a table
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
-          <ul class="about-text-list list">
-            <li class="about-text-item">
+        </div>
+      </section>
+      <section class="about section">
+        <div class="container">
+          <h2 class="visually-hidden">About a complex</h2>
+          <div class="about-first-box section">
+            <div class="canvas-about-first">
+              <div class="critic-wrap">
+                <img
+                  class="about-img-critic"
+                  src="./images/critic's photos/critic-1-1x.jpg"
+                  alt="Critic"
+                  width="41"
+                />
+                <div class="critic-text-wrap">
+                  <p class="critic-name title">Maria</p>
+                  <p class="critic-rating text">give rating <span>4.5</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-text-wrap">
               <p class="about-subtext">restaurant-hotel complex</p>
-            </li>
-            <li class="about-text-item">
-              <p class="about-text text">
+              <p class="about-text first text">
                 Indulge in a taste of luxury with every bite at Hotel Mimino.
                 From the freshest seafood to the most succulent steaks, every
                 dish is crafted with care to ensure that you enjoy a truly
                 memorable dining experience.
               </p>
-            </li>
-            <li class="about-text-item">
-              <p class="about-text text">
+              <p class="about-text second text">
                 Treat yourself to a taste of the good life and come dine with us
                 today!
               </p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="about-second-box">
-          <img
-            class="about-img"
-            src="./images/desktop/main/about-a-complex/img-3-1x.jpg"
-            alt="Restaurant's interior"
-            width="266"
-          />
-          <p class="about-subtext">business class hotel</p>
-          <p class="about-text text">
-            The Mimino hotel features spacious and stylish double luxury rooms
-            with modern amenities for a comfortable stay.
-          </p>
-          <div class="critic-wrap">
-            <img
-              src="./images/critic's photos/critic-2-1x.jpg"
-              alt="Critic"
-              width="41"
-            />
-            <p class="critic-name title">Alexander</p>
-            <p class="critic-rating">give rating <span>5.5</span></p>
+            </div>
           </div>
-          <img
-            src="./images/desktop/main/about-a-complex/img-4-1x.jpg"
-            alt="Restaurant's interior"
-            width="530"
-          />
+
+          <div class="about-second-box">
+            <img
+              class="about-img"
+              src="./images/desktop/main/about-a-complex/img-3-1x.jpg"
+              alt="Restaurant's interior"
+              width="266"
+            />
+            <p class="about-subtext">business class hotel</p>
+            <p class="about-text text">
+              The Mimino hotel features spacious and stylish double luxury rooms
+              with modern amenities for a comfortable stay.
+            </p>
+            <div class="critic-wrap">
+              <img
+                src="./images/critic's photos/critic-2-1x.jpg"
+                alt="Critic"
+                width="41"
+              />
+              <p class="critic-name title">Alexander</p>
+              <p class="critic-rating">give rating <span>5.5</span></p>
+            </div>
+            <img
+              src="./images/desktop/main/about-a-complex/img-4-1x.jpg"
+              alt="Restaurant's interior"
+              width="530"
+            />
+          </div>
         </div>
       </section>
 
-      <section class="restaurant">
+      <section class="restaurant section">
         <h2 class="restaurant-title title">Restaurant</h2>
         <p class="restaurant-text text">
           Relax and unwind with our delicious offerings, available any time of
@@ -206,7 +229,7 @@
         </ul>
         <p>icon</p>
       </section>
-      <section class="welcom">
+      <section class="welcom section">
         <img
           class="welcome-img"
           src="./images/desktop/main/welcom/img-1-1x.jpg"
@@ -238,7 +261,7 @@
         </ul>
       </section>
 
-      <section class="hotel">
+      <section class="hotel section">
         <h2 class="hotel-title title">Hotel</h2>
         <p class="hotel-text text">
           Book your stay with us now and experience the epitome of comfort and
@@ -283,7 +306,7 @@
         />
       </section>
 
-      <section class="location">
+      <section class="location section">
         <img
           class="location-map"
           src="./images/desktop/main/location/map-1x.jpg"
