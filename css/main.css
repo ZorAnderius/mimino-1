@@ -5,6 +5,8 @@
 
 body {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .link {
@@ -36,6 +38,29 @@ p {
   padding: 0;
 }
 
+.title {
+  font-weight: 500;
+  font-size: 68px;
+  line-height: 1;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.btn {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  width: 143px;
+  height: 40px;
+  border: 0.8px solid #f7f7f7;
+  border-radius: 32px;
+}
+
 /* ----HEADER------- */
 .header {
   background-color: #121212;
@@ -46,27 +71,28 @@ p {
 }
 .navigation-item {
 }
-.navigation-link {
+.navigation-link,
+.footer-navigation-link {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: #f7f7f7;
 }
-.logo {
+.logo,
+.footer-logo {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.18em;
-  text-transform: uppercase;
   color: #f7f7f7;
 }
 
-.logo > span {
+.logo > span,
+.footer-logo > span {
+  font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
   letter-spacing: 0.18em;
-  text-transform: uppercase;
   color: #d8d7d7;
 }
 .header-soc {
@@ -83,31 +109,25 @@ p {
 .hero-title {
   font-weight: 400;
   font-size: 180px;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
   color: #f7f7f7;
 }
 .hero-text {
-  font-size: 14px;
-  line-height: 1.29;
+  font-weight: 400;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: #f7f7f7;
 }
-.hero-italic {
+.italic-txt {
   font-style: italic;
 }
 .hero-img {
 }
-.hero-btn {
+
+.hero-book-room-btn,
+.hero-book-table-btn {
   font-size: 18px;
   line-height: 1.33;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #f7f7f7;
   background-color: #121212;
-  border-color: red;
+  color: #f7f7f7;
 }
 
 /* ----ABOUT A COMPLEX------- */
@@ -123,14 +143,15 @@ p {
   border-radius: 6px;
 }
 .critic-name {
-  font-weight: 500;
   font-size: 14px;
-  line-height: 1;
+  text-transform: capitalize;
   color: #f7f7f7;
 }
 .critic-rating {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
+  text-transform: lowercase;
   color: #575757;
 }
 
@@ -147,15 +168,11 @@ p {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.18em;
-  text-transform: uppercase;
   color: #484848;
 }
 .about-text {
-  font-weight: 500;
   font-size: 18px;
   line-height: 1.33;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
   color: #121212;
 }
 
@@ -164,16 +181,27 @@ p {
 .restaurant {
 }
 .restaurant-title {
+  color: #121212;
 }
 .restaurant-text {
+  color: #121212;
 }
-.restaurant-book-table-btn {
+
+.restaurant-button-list {
+}
+
+.restaurant-button-item {
+}
+.restaurant-book-table-btn,
+.restaurant-view-menu-btn {
+  color: #121212;
+  border-color: #121212;
 }
 .restaurant-view-menu-btn {
 }
-.restaurant-list {
+.restaurant-img-list {
 }
-.restaurant-item {
+.restaurant-img-item {
 }
 .restaurant-img {
 }
@@ -181,23 +209,36 @@ p {
 /* -----WELCOME------ */
 .welcom {
 }
+.welcome-img {
+}
 .welcome-title {
+  font-size: 36px;
+  line-height: 1.11;
+  color: #000000;
 }
 .welcome-list {
 }
 .welcome-item {
 }
 .welcome-text {
+  font-weight: 400;
+  color: #000000;
 }
 
 /* ----HOTEL--------- */
 .hotel {
+  background-color: #000000;
 }
 .hotel-title {
+  color: #f7f7f7;
 }
 .hotel-text {
+  color: #f7f7f7;
 }
-.hotel-book-room-btn {
+.hotel-book-room-btn,
+.hotel-view-room-btn {
+  color: #f7f7f7;
+  background-color: #000000;
 }
 .hotel-view-room-btn {
 }
@@ -210,6 +251,7 @@ p {
 .location-map {
 }
 .location-title {
+  color: #121212;
 }
 .address {
   display: block;
@@ -219,11 +261,18 @@ p {
 }
 .address-item {
 }
-.address-link {
+.address-link,
+.address-phone {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #000000;
 }
 .address-text {
+  font-weight: 700;
+  color: #121212;
 }
 .address-phone {
+  color: #121212;
 }
 
 /* -----FOOTER---- */
@@ -236,8 +285,14 @@ p {
 .footer-navigation-item {
 }
 .footer-navigation-link {
+  color: #121212;
 }
 .footer-logo {
+  color: #121212;
+}
+
+.footer-logo > span {
+  color: #121212;
 }
 .footer-soc {
 }

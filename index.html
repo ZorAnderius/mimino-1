@@ -45,15 +45,15 @@
     </header>
     <main class="main">
       <section class="hero">
-        <h1 class="hero-title">Mimino</h1>
-        <p class="hero-text">
+        <h1 class="hero-title title">Mimino</h1>
+        <p class="hero-text text">
           Whether you're in the mood for a hearty breakfast, a light lunch, or
-          <span class="hero-italic">a romantic dinner</span>, our menu has
+          <span class="italic-txt">a romantic dinner</span>, our menu has
           something for everyone.
         </p>
-        <p class="hero-text">
-          At Hotel Mimino, <span class="hero-italic">we believe</span> that
-          great food should be available to everyone, no matter the time of day.
+        <p class="hero-text text">
+          At Hotel Mimino, <span class="italic-txt">we believe</span> that great
+          food should be available to everyone, no matter the time of day.
         </p>
         <img
           class="hero-img"
@@ -61,12 +61,16 @@
           alt="Our complex"
           width="542"
         />
-        <button class="hero-btn" type="button">book a room</button>
-        <button class="hero-btn" type="button">book a table</button>
+        <button class="hero-book-room-btn btn" type="button">
+          book a room
+        </button>
+        <button class="hero-book-table-btn btn" type="button">
+          book a table
+        </button>
       </section>
 
       <section class="about">
-        <h2 class="about-title">About a complex</h2>
+        <h2 class="about-title title">About a complex</h2>
         <div class="about-first-box">
           <img
             class="about-img"
@@ -87,15 +91,15 @@
               alt="Critic"
               width="41"
             />
-            <p class="critic-name">Maria</p>
-            <p class="critic-rating">give rating <span>4.5</span></p>
+            <p class="critic-name title">Maria</p>
+            <p class="critic-rating text">give rating <span>4.5</span></p>
           </div>
           <ul class="about-text-list list">
             <li class="about-text-item">
               <p class="about-subtext">restaurant-hotel complex</p>
             </li>
             <li class="about-text-item">
-              <p class="about-text">
+              <p class="about-text text">
                 Indulge in a taste of luxury with every bite at Hotel Mimino.
                 From the freshest seafood to the most succulent steaks, every
                 dish is crafted with care to ensure that you enjoy a truly
@@ -103,7 +107,7 @@
               </p>
             </li>
             <li class="about-text-item">
-              <p class="about-text">
+              <p class="about-text text">
                 Treat yourself to a taste of the good life and come dine with us
                 today!
               </p>
@@ -119,7 +123,7 @@
             width="266"
           />
           <p class="about-subtext">business class hotel</p>
-          <p class="about-text">
+          <p class="about-text text">
             The Mimino hotel features spacious and stylish double luxury rooms
             with modern amenities for a comfortable stay.
           </p>
@@ -129,7 +133,7 @@
               alt="Critic"
               width="41"
             />
-            <p class="critic-name">Alexander</p>
+            <p class="critic-name title">Alexander</p>
             <p class="critic-rating">give rating <span>5.5</span></p>
           </div>
           <img
@@ -141,19 +145,25 @@
       </section>
 
       <section class="restaurant">
-        <h2 class="restaurant-title">Restaurant</h2>
-        <p class="restaurant-text">
+        <h2 class="restaurant-title title">Restaurant</h2>
+        <p class="restaurant-text text">
           Relax and unwind with our delicious offerings, available any time of
           day.
         </p>
-        <button class="restaurant-book-table-btn" type="button">
-          book a table
-        </button>
-        <button class="restaurant-view-menu-btn" type="button">
-          View the menu
-        </button>
-        <ul class="restaurant-list list">
-          <li class="restaurant-item">
+        <ul class="restaurant-button-list list">
+          <li class="restaurant-button-item">
+            <button class="restaurant-book-table-btn btn" type="button">
+              book a table
+            </button>
+          </li>
+          <li class="restaurant-button-item">
+            <button class="restaurant-view-menu-btn btn" type="button">
+              View the menu
+            </button>
+          </li>
+        </ul>
+        <ul class="restaurant-img-list list">
+          <li class="restaurant-img-item">
             <img
               class="restaurant-img"
               src="./images/desktop/main/restor-details/img1-1x.jpg"
@@ -161,7 +171,7 @@
               width="266"
             />
           </li>
-          <li class="restaurant-item">
+          <li class="restaurant-img-item">
             <img
               class="restaurant-img"
               src="./images/desktop/main/restor-details/img-2-1x.jpg"
@@ -169,7 +179,7 @@
               width="266"
             />
           </li>
-          <li class="restaurant-item">
+          <li class="restaurant-img-item">
             <img
               class="restaurant-img"
               src="./images/desktop/main/restor-details/img-3-1x.jpg"
@@ -177,7 +187,7 @@
               width="266"
             />
           </li>
-          <li class="restaurant-item">
+          <li class="restaurant-img-item">
             <img
               class="restaurant-img"
               src="./images/desktop/main/restor-details/img-4-1x.jpg"
@@ -185,7 +195,7 @@
               width="266"
             />
           </li>
-          <li class="restaurant-item">
+          <li class="restaurant-img-item">
             <img
               class="restaurant-img"
               src="./images/desktop/main/restor-details/img-5-1x.jpg"
@@ -198,24 +208,26 @@
       </section>
       <section class="welcom">
         <img
+          class="welcome-img"
           src="./images/desktop/main/welcom/img-1-1x.jpg"
           alt="Restaurant's interior"
           width="672"
         />
-        <h2 class="welcome-title">
-          Welcome to the epitome of luxury and comfort
+        <h2 class="welcome-title title">
+          Welcome to the epitome of <span class="italic-txt">luxury</span> and
+          <span class="italic-txt">comfort</span>
         </h2>
 
         <ul class="welcome-list list">
           <li class="welcome-item">
-            <p class="welcome-text">
+            <p class="welcome-text text">
               Our hotel rooms are elegantly designed with an eye for detail,
               ensuring that you have everything you need for a relaxing and
               rejuvenating stay.
             </p>
           </li>
           <li class="welcome-item">
-            <p class="welcome-text">
+            <p class="welcome-text text">
               Each room is equipped with the latest amenities, including plush
               bedding, high-speed Wi-Fi, flat-screen TVs, and a coffee maker to
               help you start your day right. Our spacious bathrooms feature
@@ -227,14 +239,18 @@
       </section>
 
       <section class="hotel">
-        <h2 class="hotel-title">Hotel</h2>
-        <p class="hotel-text">
+        <h2 class="hotel-title title">Hotel</h2>
+        <p class="hotel-text text">
           Book your stay with us now and experience the epitome of comfort and
           luxury at our hotel. We guarantee you'll be thrilled with your
           decision.
         </p>
-        <button class="hotel-book-room-btn" type="button">Book a room</button>
-        <button class="hotel-view-room-btn" type="button">View rooms</button>
+        <button class="hotel-book-room-btn btn" type="button">
+          Book a room
+        </button>
+        <button class="hotel-view-room-btn btn" type="button">
+          View rooms
+        </button>
         <img
           class="hotel-img"
           src="./images/desktop/main/hotel-details/img-1-1x.jpg"
@@ -274,7 +290,7 @@
           alt="Map"
           width="640"
         />
-        <h2 class="location-title">Location</h2>
+        <h2 class="location-title title">Location</h2>
         <address class="address">
           <ul class="address-list list">
             <li class="address-item">
@@ -286,15 +302,15 @@
               >
             </li>
             <li class="address-item">
-              <p class="address-text">Call us:</p>
+              <p class="address-text text">Call us:</p>
             </li>
             <li class="address-item">
-              <a class="address-phone" href="tel:(095)5559533"
+              <a class="address-phone link" href="tel:(095)5559533"
                 >(095) 555 95 33</a
               >
             </li>
             <li class="address-item">
-              <a class="address-phone" href="tel:(066)8491089"
+              <a class="address-phone link" href="tel:(066)8491089"
                 >(066) 849 10 89</a
               >
             </li>
