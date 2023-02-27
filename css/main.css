@@ -683,7 +683,6 @@ p {
 }
 .thumb-first {
   max-width: 335px;
-  height: 442px;
 }
 
 .thumb-first > img {
@@ -838,12 +837,12 @@ p {
   }
 
   .about-first-box-wrap {
+    position: relative;
     margin-bottom: 32px;
   }
 
   .about-first-box {
     max-width: 704px;
-    height: 882px;
   }
 
   .thumb-first {
@@ -862,12 +861,11 @@ p {
     top: 209px;
     right: 0;
     max-width: 404px;
-    height: 219px;
   }
 
   .about-text-wrap {
     padding-right: 232px;
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
 
   .about-text {
@@ -897,9 +895,7 @@ p {
   }
 
   .about-second-wrap {
-    position: relative;
     padding-left: 174px;
-    margin-bottom: 54px;
   }
 
   .thumb-third {
@@ -930,6 +926,17 @@ p {
     max-width: 1440px;
   }
 
+  .about-first-box-wrap {
+    min-width: 739px;
+    margin: 0;
+  }
+
+  .about-second-box-wrap {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   .img-second-tab {
     display: none;
   }
@@ -937,37 +944,25 @@ p {
     display: block;
   }
 
-  .about-first-box-wrap {
-    margin-bottom: 0;
-  }
-
   .about-first-box {
-    max-width: 704px;
-    height: 882px;
-  }
-
-  .thumb-first {
-    max-width: 482px;
-    height: 636px;
-  }
-
-  .about-feedback-first {
-    top: 176px;
-    left: 370px;
-    z-index: 1000;
+    min-width: 1376px;
+    display: flex;
+    flex-direction: row;
+    gap: 107px;
   }
 
   .thumb-second {
     position: absolute;
     top: 209px;
     right: 0;
-    max-width: 404px;
-    height: 219px;
+    max-width: 439px;
   }
 
   .about-text-wrap {
-    padding-right: 232px;
-    margin-bottom: 80px;
+    max-width: 473px;
+    padding-top: 199px;
+    padding-right: 0;
+    margin-bottom: 0;
   }
 
   .about-text {
@@ -976,7 +971,7 @@ p {
   }
 
   .about-text.first {
-    max-width: 472px;
+    max-width: 473px;
     margin-bottom: 14px;
   }
 
@@ -997,9 +992,8 @@ p {
   }
 
   .about-second-wrap {
-    position: relative;
-    padding-left: 174px;
-    margin-bottom: 54px;
+    padding-left: 87px;
+    margin-bottom: 0;
   }
 
   .thumb-third {
@@ -1008,14 +1002,12 @@ p {
   }
 
   .about-feedback-second {
-    top: 303px;
-    left: 67px;
+    left: -20px;
   }
 
   .text-img-wrap {
-    display: flex;
-    gap: 32px;
-    flex-direction: row-reverse;
+    padding-top: 127px;
+    gap: 54px;
     justify-content: flex-end;
   }
 
